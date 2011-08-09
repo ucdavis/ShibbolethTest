@@ -2,6 +2,9 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Welcome!  This page is protected by shibboleth!</h2>
+<h2>Welcome!  You should be able to get here without logging in!</h2>
 
+<h3>Do I know who you are? @User.Identity.IsAuthenticated </h3>
+
+<h4>@Html.ActionLink("Admin Page", "Index", "Admin")</h4>
 <h4>@Html.ActionLink("About This App", "About")</h4>

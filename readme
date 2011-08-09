@@ -1,0 +1,5 @@
+Sample Shibboleth Testing application using .NET FormsAuthentication with Mvc3.
+
+Shows Shibboleth working in conjunction with FormsAuth, which is important for granular [Authorize] and roles security. Note the root homepage and about pages do not cause authorization while the /Admin page does.
+
+See the wiki (coming soon) for Shibboleth config implementation details.

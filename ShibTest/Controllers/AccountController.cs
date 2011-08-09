@@ -21,5 +21,10 @@ namespace ShibTest.Controllers
             FormsAuthentication.RedirectFromLoginPage(user, false);
         }
 
+        public RedirectToRouteResult Logout()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Index", "Home");
+        }
     }
 }

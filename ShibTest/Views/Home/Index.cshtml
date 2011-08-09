@@ -4,7 +4,10 @@
 
 <h2>Welcome!  You should be able to get here without logging in!</h2>
 
-<h3>Do I know who you are? @User.Identity.IsAuthenticated </h3>
+<h3>Are you currently authenticated? @( User.Identity.IsAuthenticated ? "Yes" : "No" )</h3>
 
-<h4>@Html.ActionLink("Admin Page", "Index", "Admin")</h4>
-<h4>@Html.ActionLink("About This App", "About")</h4>
+<h4>@Html.ActionLink("Admin Page (requires authentication)", "Index", "Admin")</h4>
+
+<h4>@Html.ActionLink("About This App (public)", "About")</h4>
+
+<h4>@Html.ActionLink("Logout", "Logout", "Account")</h4>

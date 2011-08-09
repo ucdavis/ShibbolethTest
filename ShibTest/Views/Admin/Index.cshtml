@@ -2,7 +2,6 @@
     ViewBag.Title = "Index";
 }
 
-<h2>You are now authorized Mr. Fancy Pants, or should I call you @Request.ServerVariables["HTTP_DISPLAYNAME"]</h2>
+<h2>You are now authorized Mr. Fancy Pants, or should I call you @User.Identity.Name?</h2>
 
-<h4>@Html.ActionLink("Admin Page", "Index", "Admin")</h4>
 <h4>@Html.ActionLink("Home", "Index", "Home")</h4>
